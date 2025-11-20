@@ -1,9 +1,108 @@
 :root{
     --main-color : #ff9800;
 }
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Open Sans", sans-serif;
 }
+
+/* start settings box */
+.settings-box{
+    position: fixed;
+    background-color: #fff;
+    width: 270px;
+    min-height: 100vh;
+    z-index: 100;
+    left: -268px;
+    border-right: 2px solid #fff;
+    transition: all 0.5s;
+    opacity: 0.95;
+}
+.settings-box.open{
+    left: 0;
+}
+
+
+.setting-toggle{
+    position: absolute;
+    right: -30px;
+    top: 226px;
+    background-color: white;
+    color: var(--main-color);
+    cursor: pointer; 
+    text-align: center;
+}
+.setting-toggle .fa-gear{
+    width: 28px;
+    padding: 8px 0;
+}
+.setting-toggle::after{
+    content: '';
+    border-style: solid;
+    border-width: 16px;
+    border-color: transparent transparent transparent #FFF;
+    position: absolute;
+    left: 28px;
+}
+
+.settings-toggle.spin::after {
+    border-color: transparent red transparent transparent;
+    right: 0px;
+    left: 0;
+}
+.settings-box .settings-container{
+    padding: 8px;
+}
+.settings-box .options-box .color-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settings-box .options-box {
+    text-align: center;
+    background-color: #ddd;
+    padding: 7px;
+}
+.settings-box .options-box h2{
+    margin: 15px 0;
+}
+
+.settings-box .options-box li{
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    border: 3px solid #ddd;
+}
+.settings-box .options-box li.active{
+    opacity: 1;
+    border: 3px solid #fff;
+}
+.settings-box .options-box li:nth-child(1){
+    background-color: #ff9800;
+}
+.settings-box .options-box li:nth-child(2){
+    background-color: #f44336;
+}
+.settings-box .options-box li:nth-child(3){
+    background-color: #009688;
+}
+.settings-box .options-box li:nth-child(4){
+    background-color: #00bcd4;
+}
+.settings-box .options-box li:nth-child(5){
+    background-color: #3f51b5;
+}
+
+/* end settings box */
 
 /* start landing page */
 .landing-page{
@@ -73,6 +172,7 @@ body{
     color: #FFF;
     z-index: 2;
     text-align: center;
+    width: 100%;
 }
 
 .introduction-text h1{
