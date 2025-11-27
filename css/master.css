@@ -65,10 +65,12 @@ body{
 .settings-box .options-box {
     text-align: center;
     background-color: #ddd;
-    padding: 7px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.settings-box .options-box h2{
-    margin: 15px 0;
+.settings-box .options-box h4{
+    margin: 10px 0;
+    font-size: 18px;
 }
 
 .settings-box .options-box li{
@@ -101,6 +103,25 @@ body{
 .settings-box .options-box li:nth-child(5){
     background-color: #3f51b5;
 }
+
+/* start random background */
+.settings-box .random-background .no,
+.settings-box .random-background .yes{
+    width: 50px;
+    display: inline-block;
+    background-color: #00BCD4;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    opacity: .5;
+}
+.settings-box .random-background span.active{
+    opacity: 1;
+}
+/* end random background */
 
 /* end settings box */
 
