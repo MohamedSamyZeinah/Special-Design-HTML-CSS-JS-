@@ -8,7 +8,14 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
-
+/* Start Container */
+.container{
+    width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+/* End Container */
 /* start settings box */
 .settings-box{
     position: fixed;
@@ -207,6 +214,37 @@ line-height: 1.6;
 font-size: 18px;
 margin: 0;
 }
-
-
 /* end introduction text */
+
+/* Start About Us */
+.about-us{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+.about-us .text-box{
+    flex: 1;
+    padding: 30px;
+}
+.about-us .text-box h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 0 10px;
+}
+.about-us .text-box p{
+    line-height: 1.8;
+    color: #777;
+    font-size: 18px;
+    margin: 0;
+}
+.about-us .img-box{
+    flex: 1;
+    text-align: center;
+    padding: auto;
+}
+.about-us .img-box img{
+    width: 370px;
+}
+/* End About Us */
